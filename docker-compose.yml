@@ -3,6 +3,7 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
+    image: israelchaimovich/vote-client:latest
     container_name: vote-client
     ports:
       - "8080:80"
@@ -15,6 +16,7 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile
+    image: israelchaimovich/vote-server:latest
     container_name: vote-server
     ports:
       - "3030:3000"
